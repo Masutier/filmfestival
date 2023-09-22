@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "HelveticaRoundedLTStd-Bd";
+    src: url("fonts/HelveticaRoundedLTStd-Bd.otf");
+}
+body {
+    overflow-x: hidden;
+    font-family: "HelveticaRoundedLTStd-Bd";
+  }
+.font {
+    font-family: "HelveticaRoundedLTStd-Bd";
+    color: #000000;
+}
+.font1 {
+    font-family: "HelveticaRoundedLTStd-Bd";
+    color: #ffffff;
+}
+.font2 {
+    font-family: "Calibri";
+    color: #000000;
+}
+.font3 {
+    font-family: "Calibri";
+    color: #ffffff;
+}
+.borde {
+    border: solid 1px black !important;
+}
+.c {
+    text-align: center !important;
+}
+.r {
+    border-radius: 10px;
+}
+.imgnav {
+    width: 100px;
+    border-radius: 15px;
+}
+.just {
+    text-align: justify;
+}
+.logi {
+    color: #fefeff;
+}
+.logi:hover {
+    color: #c1c1f8;
+}
+.atag {
+    color: #f6f6f7;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 200;
+    letter-spacing: .05rem;
+}
+.backcol {
+    color: #ffffff !important;
+    background-color: #000000;
+}
+.barbar {
+    color: #ffffff;
+}
+
+/* Counterdown */
+.marco {
+    background-color: #00AF00;
+    border-radius: 15px;
+}
+.marcofont {
+    color: #000000;
+}
+.marcofont1 {
+    color: #ffffff;
+}
+.objetivstit {
+    color: #00AF00;
+}
+.objetivs {
+    color: black;
+    font-family: "HelveticaRoundedLTStd-Bd";
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.mbup {
+    margin-top: -15%;
+}
+.mbuplett {
+    color: #FBFBE2;
+    font-family: "HelveticaRoundedLTStd-Bd";
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+.colfond {
+    background-color: rgb(57, 169, 0, 0.3);
+}
+.imgobj {
+    width: 40%;
+}
+.imgobj1 {
+    width: 100%;
+}
+.imgbutt {
+    width: 100%;
+    border-radius: 7px;
+}
+
+/* INSCRIPTION */
+.inscback {
+    background-color: #ffffff;
+}
+.inscback:hover {
+    background-color: #00AF00;
+}
+.imginsc {
+    padding-top: 15px;
+    width: 100%;
+}
+.imginsc1 {
+    width: 100%;
+}
+#onhover {
+    display: none;
+}
+#surround:hover span[id="initial"] {
+    display: none;
+}
+#surround:hover span[id="onhover"] {
+    display: block;
+    
+}
+
+.imginsc2 {
+    width: 100%;
+}
+.imginsc3 {
+    width: 50%;
+}
+
+/* OBJETIVO */
+.fromtop {
+    top: 90px;
+}
+
+/* EQUIPO COMUNICACION */
+.imgcomm {
+    width: 100%;
+    border-radius: 50%;
+    border: 13px solid rgb(57, 169, 0, 0.4);
+}
+nosotros .nosotros {
+    background-image: url('/static/img/img/vector3.jpg');
+    background-size: cover;
+}
+
+/* Contact */
+.contact {
+    background-color: #00AF00;
+    color: #FBFBE2;
+    margin-top: 20px;
+}
+.imgred {
+    width: 100px;
+    padding: 10px;
+}
+.imgred2 {
+    width: 100%;
+    padding: 10px;
+}
+.imgicont {
+    width: 100px;
+    padding: 10px;
+}
+.imgform {
+    width: 150px;
+}
+
+
+/* back-to-top */
+.backtotop {
+    width: 40pt;
+    height: auto;
+    position: fixed;
+    bottom: 4.50rem;
+    right: 1.75rem;
+    z-index: 999;
+}
+.backtotop:hover {
+    color: transparent;
+    background-color: transparent;
+}
+
+/* CATEGORY */
+categoria .categoria {
+    background-image: url('/static/img/img/film1.png');
+    background-size: cover;
+}
+.topmar {
+    top: 20%;
+}
+.filmtxt {
+    background-color: rgb(0, 175, 0, 0.3);
+    color: #000000;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+
+/* RESPONSIVE */
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  
+  /*-- Fixed Background Image --*/
+  .fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+  }
+  .fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
