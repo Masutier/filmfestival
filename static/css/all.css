@@ -210,14 +210,14 @@ categoria .categoria {
 /* Devices under 1599px (xl) */
 @media (max-width: 2000.98px) {
     .imgred2 {
-        width: 100%;
+        width: 80%;
         padding: 10px;
     }
 }
 /* Devices under 1599px (xl) */
 @media (max-width: 15000.98px) {
     .imgred2 {
-        width: 100%;
+        width: 80%;
         padding: 10px;
     }
 }
