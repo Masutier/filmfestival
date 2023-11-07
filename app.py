@@ -21,6 +21,12 @@ def category():
     return render('categoria.html')
 
 
+@app.route('/selection')
+def selection():
+
+    return render('selection.html')
+
+
 @app.route('/previous')
 def previous():
 
