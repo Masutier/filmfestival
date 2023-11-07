@@ -29,29 +29,34 @@
                 </div>
             </div>
 
-            <div class="row inscback mt-5">
-                <div class="col-md-4 mx-auto c">
-                    <span id="surround">
-                        <span id="initial"><img src="static/img/buttons/Inscripciones.png" class="imginsc mt-4 " alt="Img"></span>
-                        <span id="onhover">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuuQAFHhfV5IiOE_DhKq1o9vGcjN6pgmNZPoz4JInOdHuc2Q/viewform">
-                                <img src="static/img/buttons/Inscripciones1.png" class="imginsc mt-4 " alt="Img">
-                            </a>
-                        </span>
-                    </span>
-                </div>
-                <div class="col-md-4 mx-auto p-5 inscback c">
-                    <p class="m-3 just">Te retamos a inscribirte en esta 4ta edición del SENA Film Festival, 
-                        preséntale al mundo tu talento y creatividad… </p>
-                    <p class="m-3 just">¡Muestra de lo que estás hecho!</p>
-                    <p class="m-3 just">Inscríbete antes de las 23:59 horas del 30 de Octubre del 2023.</p>
-                </div>
-                <div class="col-md-4 mx-auto c">
-                    <span id="surround">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuuQAFHhfV5IiOE_DhKq1o9vGcjN6pgmNZPoz4JInOdHuc2Q/viewform">
-                            <img src="static/img/buttons/4TH SFF - QR Formulario Inscripción (Claqueta Verde).png" class="imginsc1 mt-5" alt="Img">
-                        </a>
-                    </span>
+            <div class="inscback mt-5">
+                <h2 class="p-4 font c">Selected Videos</h2>
+                <div class="col-md-11 mx-auto ">
+                    <table class="table table-success table-striped">
+                        <thead>
+                            <tr>
+                                <th><h4>Category</h4></th>
+                                <th><h4>Video</h4></th>
+                                <th><h4>Directed by</h4></th>
+                                <th><h4>Centro de Formación SENA</h4></th>
+                                <th><h4>Ciudad</h4></th>
+                                <th><h4>Departamento</h4></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for movie in movies %}
+                            <tr>
+                                <td>{{movie.category}}</td>
+                                <td>{{movie.movie}}</td>
+                                <td>{{movie.Directed}}</td>
+                                <td>{{movie.centro}}</td>
+                                <td>{{movie.cidad}}</td>
+                                <td>{{movie.depto}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    
                 </div>
             </div>
         </div>

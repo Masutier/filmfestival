@@ -12,7 +12,11 @@ app.config['SECRET_KEY'] = config['SECRET_KEY']
 @app.route('/', methods=['GET', 'POST'])
 def home():
 
-    return render('index.html')
+    with open("selected.json") as movies:
+        movies = json.load(movies)
+    
+
+    return render('index.html', movies=movies)
 
 
 @app.route('/category')
