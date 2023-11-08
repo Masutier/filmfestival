@@ -25,10 +25,10 @@ def category():
     return render('categoria.html')
 
 
-@app.route('/selection')
-def selection():
+# @app.route('/selection')
+# def selection():
 
-    return render('selection.html')
+#     return render('selection.html')
 
 
 @app.route('/previous')
