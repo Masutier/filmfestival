@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    width: 444px;
+    height: 600px;
+}
+.cardr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in;
+    transform-style: preserve-3d;
+    
+}
+.cardr:hover {
+    perspective: 1000px;
+    transform: rotateY(180deg);
+}
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #AFDAE1;
+    color: #000;
+    transform: rotateY(180deg);
+}
+.text1 {
+    font-family: "Londrina";
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+.text1p {
+    font-family: "Londrina-light";
+    font-size: 1.5rem;
+}
+.text2 {
+    font-family: "Londrina";
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+.text2p {
+    font-family: "Londrina-light";
+    font-size: 1.3rem;
+}

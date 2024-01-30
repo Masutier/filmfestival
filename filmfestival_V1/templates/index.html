@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div class="col-12 marco c">
+        <img src="static/img/banner/SSF - PORTADA HOME.png" class="imgobj1 pb-5" alt="Img">
+    </div>
+
+    <div class="col-12 mt-5 mb-5">
+        {% include 'festival.html' %}
+    </div>
+
+    <div class="col-12 marco2 marcofont1 p-5">
+        {% include 'objetivo.html' %}
+    </div>
+
+    <div class="col-12 mb-5 p-5 marco font1">
+        {% include 'team.html' %}
+    </div>
+
+{% endblock %}
